@@ -7,6 +7,9 @@
     <!-- displays site properly based on user's device -->
 
     <title>Frontend Mentor | Article preview component</title>
+    <!-- normalize css -->
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="index.css">
 
 
 </head>
@@ -29,13 +32,20 @@
                         <h3>Winnie Bosibori</h3>
                         <p>23 January 2023</p>
                     </div>
-                    <div class="article-social-media" aria-label="Share on social media platforms">
-                        <span class="article-social-facebook">
-                          <img src="images/drawers.jpg" alt="heyy">
-                          
-                         </span>
-                        <span class="article-social-twitter" aria-label="Twitter"></span>
-                        <span class="article-social-pinterest" aria-label="Pinterest"></span>
+                    <button type="button" aria-label="Share on social media platforms">
+                           <img role="presentation" src="/images/icon-share.svg">
+                           <span class="button-text">Share</span>
+                      </button>
+                    <div class="article-social-media">
+                        <a class="article-social-facebook" href="https://www.facebook.com/">
+                            <img role="img" src="/images/icon-facebook.svg" alt="Share this on Facebook">
+                        </a>
+                        <a class="article-social-twitter" href="https://www.twitter.com/">
+                            <img role="img" src="/images/icon-twitter.svg" alt="Share this on Twitter">
+                        </a>
+                        <a class="article-social-pinterest" href="https://www.pinterest.com/">
+                            <img role="img" src="/images/icon-facebook.svg" alt="Share this on Pinterest" />
+                        </a>
                     </div>
                 </div>
         </article>
