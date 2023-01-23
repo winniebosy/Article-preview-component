@@ -1,8 +1,9 @@
 :root {
     --heading-text-align: center;
     --font-size: 1rem;
+    --font-color-primary: hsl(214, 84%, 22%);
     --font-color-secondary: #6d7f97;
-    --font-color-complementary: #edf2f748;
+    --font-color-complementary: #002449f6;
     --font-size: 1rem;
     --font-family-heading: Georgia, serif;
 }
@@ -13,23 +14,22 @@ h1 {
 }
 
 .article-container {
-    border: 2px solid green;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     width: 90%;
-    height: 400px;
+    height: 500px;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
+    box-shadow: 3px 5px 5px 5px grey;
 }
 
 .article-img {
     width: 50%;
-    height: 92%;
+    height: 100%;
     background-image: url('images/drawers.jpg');
     background-repeat: no-repeat;
-    padding: 1rem;
     background-position: center center;
     background-size: auto;
     object-fit: fill;
@@ -37,7 +37,47 @@ h1 {
 
 .article-content {
     width: 50%;
-    padding: 0 0 0 2rem;
+    padding: 0 0 0 1rem;
     line-height: 1.4;
     font-size: calc(1.02 * var(--font-size))
+}
+
+.article-content h2 {
+    text-align: center;
+    color: var(--font-color-complementary);
+    font-size: 1.8rem;
+}
+
+.description {
+    font-size: 1.4rem;
+}
+
+.article-profile-info {
+    border: 2px solid green;
+    display: flex;
+    flex-direction: row;
+    gap: 20px
+}
+
+.article-social-media {
+    background-color: var(--font-color-complementary);
+}
+
+.article-social-media a {
+    text-decoration: none;
+}
+
+p .date {
+    color: var(--font-color-primary);
+}
+
+.article-profile-pic {
+    border: 2px solid red;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.article-profile-content {
+    border: 2px solid red;
 }
